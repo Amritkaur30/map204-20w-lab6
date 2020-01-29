@@ -19,7 +19,7 @@
         android:parentActivityName=".MainActivity"
         android:label="@string/photo_viewer"/>
         <activity android:name=".PhotoDetailActivity"
-            android:label="@string/photo_detail"/>
+            android:label="Add Photo"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
