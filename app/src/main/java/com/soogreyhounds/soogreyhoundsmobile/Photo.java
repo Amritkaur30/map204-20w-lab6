@@ -2,6 +2,13 @@ package com.soogreyhounds.soogreyhoundsmobile;
 
 public class Photo {
     private int id;
+    private String mPerson;
+    public String getPerson() {
+        return mPerson;
+    }
+    public void setPerson(String person) {
+        mPerson = person;
+    }
 
     public int getId() {
         return id;
@@ -11,11 +18,11 @@ public class Photo {
         this.id = id;
     }
 
-    public String getUUID() {
+    public String getUuid() {
         return uuid;
     }
 
-    public void setUUID(String uuid) {
+    public void setUuid(String uuid) {
         this.uuid = uuid;
     }
 
@@ -27,11 +34,11 @@ public class Photo {
         this.title = title;
     }
 
-    public String getURL() {
+    public String getUrl() {
         return url;
     }
 
-    public void setURL(String url) {
+    public void setUrl(String url) {
         this.url = url;
     }
 

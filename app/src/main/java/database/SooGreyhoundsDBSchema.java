@@ -1,4 +1,4 @@
-package com.soogreyhounds.soogreyhoundsmobile.database;
+package database;
 
 public class SooGreyhoundsDBSchema {
     public static final class PhotoTable {
@@ -8,6 +8,9 @@ public class SooGreyhoundsDBSchema {
             public static final String TITLE = "title";
             public static final String URL = "url";
             public static final String NOTE = "note";
+            public static final String PERSON = "person";
         }
     }
+
+
 }
