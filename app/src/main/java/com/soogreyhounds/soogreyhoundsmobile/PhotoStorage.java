@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -63,6 +64,10 @@ public class PhotoStorage {
             cursor.close();
         }
         return photos;
+    }
+    public File getPhotoFile(Photo photo) {
+        File filesDir = mContext.getFilesDir();
+        return new File(filesDir, photo.getPhotoFilename());
     }
     public Photo getPhoto(String uuid) {
         PhotoCursorWrapper cursor = queryPhotos(
